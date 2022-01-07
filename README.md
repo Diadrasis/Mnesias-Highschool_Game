@@ -4,7 +4,7 @@
   </a>
   <br/>
   
-Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Γυμνασίου.
+Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Γυμνασίου. Google Store:https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasHighSchool App Store: 
   
 ## Privacy Policy
   
