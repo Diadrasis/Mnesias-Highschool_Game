@@ -4,7 +4,7 @@
   </a>
   <br/>
   
-Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Γυμνασίου. Google Store:https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasHighSchool App Store: https://apps.apple.com/mn/app/mnesias-%CF%80%CE%B1%CE%B9%CF%87%CE%BD%CE%B9%CE%B4%CE%B9-%CE%B3%CF%85%CE%BC%CE%BD%CE%B1%CF%83%CE%B9%CE%BF%CF%85/id1600922905
+Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Γυμνασίου.Ο σκοπος του παιχνιδιού είναι να μάθει ο χρήστης τόσο τα ηχοχρώματα των αρχαίων μουσικών οργάνων αλλά και τις συχνοτικές αναλογίες των νοτών. Με την βοήθεια του Πυθαγόρα μπορεί να "επισκεφθεί" την κάθε μια νότα και να μάθει περισσότερα πράγματα για αυτην. <a href="https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasHighSchool" target="_blank">Google Store</a>, <a href="https://apps.apple.com/mn/app/mnesias-%CF%80%CE%B1%CE%B9%CF%87%CE%BD%CE%B9%CE%B4%CE%B9-%CE%B3%CF%85%CE%BC%CE%BD%CE%B1%CF%83%CE%B9%CE%BF%CF%85/id1600922905" target="_blank">App Store</a>
   
 ## Privacy Policy
   
