@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Diadrasis/_Scenes/MainMenuScene.unity
     guid: 76471f0b622a8da4a8e65ff358d81d1d
   - enabled: 1
-    path: Assets/Diadrasis/_Scenes/HighSchool.unity
+    path: Assets/Diadrasis/_Scenes/HighSchoolOld.unity
     guid: c66441d728d84bf41bc4bfc75c525f9a
   - enabled: 1
     path: Assets/Diadrasis/_Scenes/PCScenes/UICreditsPC.unity

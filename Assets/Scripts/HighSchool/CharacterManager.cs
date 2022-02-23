@@ -75,7 +75,7 @@ public class CharacterManager : MonoBehaviour
             {
 
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetPos.x, transform.position.y), speed * Time.deltaTime);
-                transform.rotation = Quaternion.identity;
+                transform.rotation = Quaternion.identity;                
                 //Debug.Log("isStillPlaying");
 
 
@@ -101,7 +101,7 @@ public class CharacterManager : MonoBehaviour
                 }
                 else
                 {
-
+                    ShowImage(tempTransformName);
                     hasPlayed = false;
                     manager.highSchool.sourceCam.volume = 1.0f;
                 }
