@@ -99,8 +99,8 @@ public class PositionCreation : MonoBehaviour
             if (i == 1)
             {
                 //newPos.transform.localScale = new Vector3(0.025f, 0.4f, 1f);
-                newPos.GetChild(1).position = new Vector3(newPos.position.x, newPos.transform.position.y - 1.2f, newPos.transform.position.z);
-                newPos.position = new Vector3(newPos.position.x, newPos.transform.position.y + 0.4f, newPos.transform.position.z);
+                newPos.GetChild(1).position = new Vector3(newPos.position.x, newPos.transform.position.y - 1.4f, newPos.transform.position.z);
+                newPos.position = new Vector3(newPos.position.x, newPos.transform.position.y + 0.5f, newPos.transform.position.z);
             }
             yield return new WaitForSeconds(0.5f);
         }
