@@ -40,7 +40,7 @@ public class CharacterManager : MonoBehaviour
         //Debug.Log("layerMask: " + layerMask);
         
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !(FindObjectOfType<UIManager>().pnlHelp.transform.position.y <=-50f && FindObjectOfType<UIManager>().pnlHelp.transform.position.y >= 50f))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), targetPos, layerMask);//get the raycast on the layermask from mouse position
             
@@ -63,27 +63,18 @@ public class CharacterManager : MonoBehaviour
                 }
                 Physics.GetIgnoreLayerCollision(5, 5);
             }
-            /*else if (hit.collider != null && hit.collider.gameObject.layer == 5)
-            {
-                
-            }*/
-
+            
         }
         else
         {
-            if (transform.position.x != targetPos.x)
+            if (transform.position.x != targetPos.x && !(FindObjectOfType<UIManager>().pnlHelp.transform.position.y <= -50f && FindObjectOfType<UIManager>().pnlHelp.transform.position.y >= 50f))
             {
 
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetPos.x, transform.position.y), speed * Time.deltaTime);
-                transform.rotation = Quaternion.identity;                
-                //Debug.Log("isStillPlaying");
-
-
+                transform.rotation = Quaternion.identity; 
                 offset = transform.position - targetPos;
                 soundDist = offset.sqrMagnitude;
-                //Debug.Log("HasPlayed: "+hasPlayed+" reset: "+isReset);
-
-
+               
                 if (soundDist <= 1.0f && !hasPlayed)
                 {
 
@@ -140,7 +131,8 @@ public class CharacterManager : MonoBehaviour
             {
                 manager.highSchool.sourceCam.clip = clip;
                 manager.highSchool.sourceCam.PlayOneShot(clip);
-                StartCoroutine(Cooldown(2.5f));
+                manager.highSchool.sourceCam.time = 0;
+                StartCoroutine(Cooldown(clip.length));
                 Invoke("IsFinished", clip.length);
 
             }
@@ -174,8 +166,10 @@ public class CharacterManager : MonoBehaviour
     //is used in order to have a cooldown before we show the infor panel of the specific instrument
     IEnumerator Cooldown(float num)
     {
-        yield return new WaitForSeconds(num);
         manager.PanelInfoMethod();
+        yield return new WaitForSeconds(num);
+        Debug.Log("Num: "+num);
+        
         
     }
     public void ResetPosition()

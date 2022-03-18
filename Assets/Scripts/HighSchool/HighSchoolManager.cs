@@ -40,59 +40,10 @@ public class HighSchoolManager : MonoBehaviour
     public void SubscribeToButtonsManager()
     {
         btnClosePanel.onClick.AddListener(ClosePanel);
-        /*for (int i = 0; i < btnInstrument.Length; i++)
-        {
-
-            if (!btnInstrument[i].hasCreated)
-            {
-                if (ChechToggles(i))
-                {
-                    btnInstrument[i].CreatePoints();
-                    txtMain.text = "Επιλεξε μια θεση για να ακουσεις τον ηχο";
-                    highSchool.nameOfFolder = btnInstrument[i].name;
-                    
-                    if (highSchool.nameOfFolder.Contains(btnInstrument[i].name))
-                    {
-                        highSchool.LoadAudio(btnInstrument[i].name);
-                    }
-                    
-
-                }
-
-            }
-            else if(btnInstrument[i].hasCreated && !ChechToggles(i))
-            {
-                btnInstrument[i].DestoryInstantiatedPositions();
-                character.isReset = true;
-                character.hasPlayed = false;
-                character.ResetPosition();
-            }
-            
-        }*/
+        
 
     }
-          
-    //each instrument is toggle in order to check which one is on and create the correct positions
-    /*public bool ChechToggles(int id)
-    {
-
-        Toggle[] toggles = btnInstrument[id].GetComponentsInChildren<Toggle>();
-        if(toggles!=null && toggles.Length > 0)
-        {
-            foreach (Toggle tg in toggles)
-            {
-                if (tg.isOn)
-                {
-                    Debug.Log("Is on: " + id);
-                    imgForInfo.sprite = btnInstrument[id].GetComponent<Image>().sprite; //when character reaches the position of the tone, get the image from instrument button and show it on the panel Info
-                    return true;
-                }
-                
-            }
-        }
-        
-        return false;
-    }*/
+       
 
     //to close the panel info
     void ClosePanel()
